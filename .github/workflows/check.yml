@@ -32,4 +32,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           APP_DIR: ${{ secrets.APP_DIR }}
         run: |
-          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USERNAME@$HOST "cd $APP_DIR && git pull origin master && npm install && npm run build && cd $APP_DIR && pm2 restart main"
+          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY idblablobla@gmail.com $USERNAME@$HOST "cd $APP_DIR && git pull origin master && npm install && npm run build && cd $APP_DIR && pm2 restart main"
